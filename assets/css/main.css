@@ -3449,3 +3449,257 @@ input[type="button"]:disabled,
     padding: 0;
   }
 }
+
+/* ===== Personnalisation du portfolio ===== */
+
+/* Couleur de la barre latérale */
+#header {
+  background-color: #EAF3FA;
+}
+
+/* Couleur du texte dans la barre latérale */
+#header,
+#header p {
+  color: #28465F;
+}
+
+/* Couleur des titres */
+h1, h2, h3, h4 {
+  color: #28465F;
+}
+
+/* Couleur des liens */
+a {
+  color: #5A91BC;
+}
+
+/* Couleur des boutons */
+.button.primary {
+  background-color: #86B6DC;
+  color: #FFFFFF !important;
+}
+
+/* Séparation discrète entre les sections */
+#main > section {
+  border-top-color: #EAF3FA;
+}
+
+/* Agrandir légèrement la photo de profil */
+#header .image.avatar {
+  width: 9em;
+  height: 9em;
+}
+
+/* Agrandir les photos dans Mes réalisations */
+#two .features img {
+  width: 100%;
+  height: auto;
+}
+/* Couleur des textes et titres */
+#main,
+#main p,
+#header,
+#header p {
+  color: #28465F;
+}
+
+/* Couleur des titres */
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#header h1 {
+  color: #28465F;
+}
+
+/* Liens plus visibles */
+#main a:not(.button) {
+  color: #315F85;
+}
+
+/* ===== Grand en-tête photographique ===== */
+
+#top {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Grande photo sur toute la largeur */
+#top .hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  background-color: #EAF3FA;
+}
+
+/* Photo centrée et agrandie */
+#top .hero-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Nom et présentation sur la photo */
+#top .hero-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+/* Texte blanc pour être lisible sur la photo */
+#top .hero-text h1 {
+  color: #FFFFFF;
+  font-size: 2.8em;
+  margin-bottom: 0.3em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
+}
+
+#top .hero-text p {
+  color: #FFFFFF;
+  font-size: 1.15em;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+/* Menu horizontal */
+#top-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 2.5em;
+  padding: 1.2em;
+  background: #EAF3FA;
+  border-bottom: 1px solid #D5E4F0;
+}
+
+#top-nav a {
+  color: #28465F;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5em 0;
+}
+
+#top-nav a:hover {
+  color: #5A91BC;
+}
+
+/* ===== Couleurs de la barre latérale ===== */
+
+/* Fond de la barre latérale */
+#header {
+  background-color: #28465F;
+}
+
+/* Nom et texte de présentation */
+#header h1,
+#header h1 a,
+#header header p {
+  color: #FFFFFF !important;
+}
+
+/* Liens du menu */
+#header #nav ul li a {
+  color: #EAF3FA !important;
+  opacity: 1;
+}
+
+/* Lien du menu lorsque la souris passe dessus */
+#header #nav ul li a:hover {
+  color: #FFFFFF !important;
+  background-color: #3A5D7A;
+}
+
+/* Lien correspondant à la section active */
+#header #nav ul li a.active {
+  color: #FFFFFF !important;
+  background-color: #3A5D7A;
+  border-left-color: #86B6DC;
+}
+
+/* Icônes des réseaux sociaux */
+#header .icons a {
+  color: #FFFFFF !important;
+}
+
+/* Séparateurs dans le menu */
+#header #nav ul li {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Séparateurs du pied de la barre */
+#header footer {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+/* Liens des réalisations */
+.realisation-lien {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 12px 16px;
+  color: #28465F !important;
+  background-color: #EAF3FA;
+  border: 1px solid #D4E2EE;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+/* Taille et couleur du logo */
+.realisation-lien i {
+  font-size: 1.6em;
+  color: #28465F;
+}
+
+/* Effet au passage de la souris */
+.realisation-lien:hover {
+  background-color: #D4E2EE;
+  text-decoration: none;
+}
+/* Photos de la simulation : même largeur et même présentation */
+.simulation-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.simulation-photos img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Photo de la boucherie : taille réduite */
+.photo-boucherie {
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 1.5em;
+}
+
+.photo-boucherie img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+
+
+
